@@ -8,3 +8,75 @@ section {
 .logopic {
 	width: 40%;
 }
+p, footer {
+	margin-top: 10px;
+	font-size: 20px;
+	font-family: Ariel;
+	margin-left: 10px;
+}
+footer {
+	margin-top: 30px;
+}
+.pic1 {
+	width: 100%;
+}
+.right {
+	margin-right: 20px;
+	margin-left: 30px;
+}
+.homepage {
+	text-align: left;
+	list-style-type: none;
+	display: flex;
+}
+
+
+/*-------------------------------------TITLE----------------------------*/
+
+.body {
+	width: 80%;
+	margin: auto;
+	background-color: white;
+}
+.head {
+	float: right;
+	margin-right: 20px;
+	margin-top: 80px;
+	font-family: Calibri;
+	font-size: 50px;
+}
+
+/*-------------------------------LINK BAR---------------------------------*/
+
+.links {
+	background-color: green;
+}
+ul {
+	list-style-type: none;
+	display: flex;
+	text-align: center;
+	padding: 0px;
+	margin-left: 0px;
+	font-family: Calibri;
+	font-size: 30px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+#l {
+	width: 30%;
+}
+
+.stickerlink {
+	margin-left:-5%;
+}
+
+.newerpic {
+	width:25%;
+	margin-top:-25px;
+}
+	
+.linkbox {
+	text-align: center;
+	justify-content: center;
+	display: flex;
+}
