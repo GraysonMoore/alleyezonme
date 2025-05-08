@@ -26,6 +26,7 @@
 			
 				<label for="one">Where was Tupac born?</label><br>
 				<select name="one" id="one">
+					<option value="0"> </option>
 					<option value="1">New York</option>
 					<option value="2">Brooklyn</option>
 					<option value="3">East Harlem</option>
@@ -33,6 +34,7 @@
 				</select><br><br>
 				<label for="two">What year was "All Eyez On Me" released?</label><br>
 				<select name="two" id="two">
+					<option value="0"> </option>
 					<option value="1">1996</option>
 					<option value="2">1997</option>
 					<option value="3">1994</option>
@@ -40,6 +42,7 @@
 				</select><br><br>
 				<label for="three">What Tupac song is most known for upholding women's rights?</label><br>
 				<select name="three" id="three">
+					<option value="0"> </option>
 					<option value="1">California Love</option>
 					<option value="2">Keep Ya Head Up</option>
 					<option value="3">Dear Mama</option>
@@ -47,6 +50,7 @@
 				</select><br><br>
 				<label for="four">What Tupac style directly reflects metamodernism?</label><br>
 				<select name="four" id="four">
+					<option value="0"> </option>
 					<option value="1">Self reflection and awareness, especially when discussing culture and women's rights</option>
 					<option value="2">Finding meaning in life despite the chaos it presents</option>
 					<option value="3">Fragmenting his own life into different roles: a poet, lover, thug, and outlaw</option>
@@ -54,6 +58,7 @@
 				</select><br><br>
 				<label for="five">Before Tupac became famous, what alias did he use during performances?</label><br>
 				<select name="five" id="five">
+					<option value="0"> </option>
 					<option value="1">MC Bronx</option>
 					<option value="2">Shakur</option>
 					<option value="3">Big U, Little U</option>
@@ -61,13 +66,7 @@
 				</select><br><br>
 				<button onclick="answer()">Submit!</button>
 			<h2 id="answer"></h2>
-			
-			<p id="answers1"></p>
-			<p id="answers2"></p>
-			<p id="answers3"></p>
-			<p id="answers4"></p>
-			<p id="answers5"></p>
-			<footer>&copy; 2021 Grayson Moore</footer>
+			<footer>&copy; 2025 Grayson Moore, Devin Merchant, Hudson Gant, Keller Costello</footer>
 		</div>
 	</body>
 	<script>
@@ -94,14 +93,14 @@
 			if(five == 4) {
 				var total = total + 1;
 			}
-			var totalans = total + "/5";
+			var totalans = "Score: " + total + "/5";
 			
 			document.getElementById("answer").innerHTML = totalans;
-			document.getElementById("answers1").innerHTML = one;
-			document.getElementById("answers2").innerHTML = two;
-			document.getElementById("answers3").innerHTML = three;
-			document.getElementById("answers4").innerHTML = four;
-			document.getElementById("answers5").innerHTML = five;
+			document.getElementById("one").value = 0;
+			document.getElementById("two").value = 0;
+			document.getElementById("three").value = 0;
+			document.getElementById("four").value = 0;
+			document.getElementById("five").value = 0;
 		};
 	</script>
 </html> 
