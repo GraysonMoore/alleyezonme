@@ -23,46 +23,58 @@
 			<p><b>How well do you know Tupac?</b></p>
 			<p class="paragraph">Answer the questions below to find out!</p>
 
-			<form>
-				<label>Where was Tupac born?</label>
-				<select>
-					<option>New York</option>
-					<option>Brooklyn</option>
-					<option>East Harlem</option>
-					<option>Bronx</option>
-				</select>
-				<label>What year was "All Eyez On Me" released?</label>
-				<select>
-					<option>1996</option>
-					<option>1997</option>
-					<option>1994</option>
-					<option>1999</option>
-				</select>
-				<label>What Tupac song is most known for upholding women's rights?</label>
-				<select>
-					<option>California Love</option>
-					<option>Keep Ya Head Up</option>
-					<option>Dear Mama</option>
-					<option>Ghetto Gospel</option>
-				</select>
-				<label>What Tupac style directly reflects metamodernism?</label>
-				<select>
-					<option>Self reflection and awareness, especially when discussing culture and women's rights</option>
-					<option>Finding meaning in life despite the chaos it presents</option>
-					<option>Fragmenting his own life into different roles: a poet, lover, thug, and outlaw</option>
-					<option>Using irony to drive home a point, as seen literally in the title "All Eyez On Me"</option>
-				</select>
-				<label>Before Tupac became famous, what alias did he use during performances?</label>
-				<select>
-					<option>MC New York</option>
-					<option>Shakur</option>
-					<option>Big U, Little U</option>
-					<option>MC Bronx</option>
-				</select>
-				<submit type="submit">Submit!</submit>
+			<form function="answer()">
+				<label for="one">Where was Tupac born?</label><br>
+				<select name="one" multiple>
+					<option value="1">New York</option>
+					<option value="2">Brooklyn</option>
+					<option value="3">East Harlem</option>
+					<option value="4">Bronx</option>
+				</select><br><br>
+				<label for="two">What year was "All Eyez On Me" released?</label><br>
+				<select name="two" multiple>
+					<option value="1">1996</option>
+					<option value="2">1997</option>
+					<option value="3">1994</option>
+					<option value="4">1999</option>
+				</select><br><br>
+				<label for="three">What Tupac song is most known for upholding women's rights?</label><br>
+				<select name="three" multiple>
+					<option value="1">California Love</option>
+					<option value="2">Keep Ya Head Up</option>
+					<option value="3">Dear Mama</option>
+					<option value="4">Ghetto Gospel</option>
+				</select><br><br>
+				<label for="four">What Tupac style directly reflects metamodernism?</label><br>
+				<select name="four" multiple>
+					<option value="1">Self reflection and awareness, especially when discussing culture and women's rights</option>
+					<option value="2">Finding meaning in life despite the chaos it presents</option>
+					<option value="3">Fragmenting his own life into different roles: a poet, lover, thug, and outlaw</option>
+					<option value="4">Using irony to drive home a point, as seen literally in the title "All Eyez On Me"</option>
+				</select><br><br>
+				<label for="five">Before Tupac became famous, what alias did he use during performances?</label><br>
+				<select name="five" multiple>
+					<option value="1">MC New York</option>
+					<option value="2">Shakur</option>
+					<option value="3">Big U, Little U</option>
+					<option value="4">MC Bronx</option>
+				</select><br><br>
+				<button type="submit">Submit!</button>
 			</form>
-					
+			<p id="answers"></p>
 			<footer>&copy; 2021 Grayson Moore</footer>
 		</div>
 	</body>
+	<script>
+		
+		var function = answer() {
+			var one = document.getElementsByName("one").val();
+			var two = document.getElementsByName("two").val();
+			var three = document.getElementsByName("three").val();
+			var four = document.getElementsByName("four").val();
+			var five = document.getElementsByName("five").val();
+
+			document.getElementById("answers").innerHTML = one " + " two " + " three " + " four " + " five;
+		};
+	</script>
 </html> 
