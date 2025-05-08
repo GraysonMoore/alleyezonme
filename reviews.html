@@ -25,35 +25,35 @@
 
 			
 				<label for="one">Where was Tupac born?</label><br>
-				<select name="one" multiple>
+				<select name="one" id="one" multiple>
 					<option value="1">New York</option>
 					<option value="2">Brooklyn</option>
 					<option value="3">East Harlem</option>
 					<option value="4">Bronx</option>
 				</select><br><br>
 				<label for="two">What year was "All Eyez On Me" released?</label><br>
-				<select name="two" multiple>
+				<select name="two" id="two" multiple>
 					<option value="1">1996</option>
 					<option value="2">1997</option>
 					<option value="3">1994</option>
 					<option value="4">1999</option>
 				</select><br><br>
 				<label for="three">What Tupac song is most known for upholding women's rights?</label><br>
-				<select name="three" multiple>
+				<select name="three" id="three" multiple>
 					<option value="1">California Love</option>
 					<option value="2">Keep Ya Head Up</option>
 					<option value="3">Dear Mama</option>
 					<option value="4">Ghetto Gospel</option>
 				</select><br><br>
 				<label for="four">What Tupac style directly reflects metamodernism?</label><br>
-				<select name="four" multiple>
+				<select name="four" id="four" multiple>
 					<option value="1">Self reflection and awareness, especially when discussing culture and women's rights</option>
 					<option value="2">Finding meaning in life despite the chaos it presents</option>
 					<option value="3">Fragmenting his own life into different roles: a poet, lover, thug, and outlaw</option>
 					<option value="4">Using irony to drive home a point, as seen literally in the title "All Eyez On Me"</option>
 				</select><br><br>
 				<label for="five">Before Tupac became famous, what alias did he use during performances?</label><br>
-				<select name="five" multiple>
+				<select name="five" id="five" multiple>
 					<option value="1">MC New York</option>
 					<option value="2">Shakur</option>
 					<option value="3">Big U, Little U</option>
@@ -72,11 +72,11 @@
 	<script>
 		
 		function answer() {
-			var one = document.getElementsByName("one").val();
-			var two = document.getElementsByName("two").val();
-			var three = document.getElementsByName("three").val();
-			var four = document.getElementsByName("four").val();
-			var five = document.getElementsByName("five").val();
+			var one = document.getElementById("one").value;
+			var two = document.getElementById("two").value;
+			var three = document.getElementById("three").value;
+			var four = document.getElementById("four").value;
+			var five = document.getElementById("five").value;
 
 			document.getElementById("answers1").innerHTML = one;
 			document.getElementById("answers2").innerHTML = two;
